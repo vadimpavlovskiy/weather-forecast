@@ -1,0 +1,27 @@
+.forecast_flex{
+    display: flex;
+    width: 100%;
+    justify-items: center;
+    padding-top: 5%;
+    justify-content: space-around;
+}
+
+button{
+    background: rgba( 255, 68, 68, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6.5px );
+    -webkit-backdrop-filter: blur( 6.5px );
+    border-radius: 5px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color: white;
+    font-size: 20px;
+    width: 25%;
+}
+button:hover{
+    background: rgba( 255, 55, 55, 0.55 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6.5px );
+    -webkit-backdrop-filter: blur( 6.5px );
+    border-radius: 5px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}

@@ -1,0 +1,11 @@
+.header {
+
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    margin: 0 30% 0 30%;
+}
+h1{
+    color: white;
+    margin: 0;
+}

@@ -1,24 +1,35 @@
-import logo from './logo.svg';
+import React, {useState, useEffect} from 'react';
+
 import './App.css';
 
-function App() {
+import Header from './components/header/header.component'
+import Forecast from './components/forecast/forecast.components';
+
+const App = () => {
+  
+  const API_OPENWEATHER = [
+    {
+      key: 'd95186430709219ad7f3a1671db2c152'
+    }
+  ]
+
+  const [coord, setCoord] = useState([]);
+
+  async function getLocation (){
+    await navigator.geolocation.getCurrentPosition(position => { setCoord(position.coords)}); 
+  }
+
+  useEffect(() => {
+    getLocation()
+  }, [])
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div className='container'>
+    <Header/> 
+    <Forecast api={API_OPENWEATHER[0].key} location={coord} />
+   </div>
   );
 }
 
