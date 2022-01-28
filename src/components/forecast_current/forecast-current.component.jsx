@@ -14,7 +14,6 @@ export const ForecastCurrent = (props) => {
               },1000)
             }
     })
-
     return (
     <div >
         {(typeof props.weather.main != "undefined") ? (

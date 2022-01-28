@@ -1,0 +1,53 @@
+.forecast_card{
+    display: grid;
+    width: 100%;
+    grid-column-gap: 5%;
+    background: rgba( 255, 68, 68, 0.25 );
+    box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+    backdrop-filter: blur( 6.5px );
+    -webkit-backdrop-filter: blur( 6.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    align-items: center;
+    justify-content: start;
+}
+.forecast_date {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.forecast_day{
+    display: flex;
+    width: 100%;
+    justify-items: center;
+    font-weight: bold;
+    color: white;
+    font-size: 12px;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+.forecast_icon{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.forecast_icon img{
+    width: 70px;
+}
+.forecast_temp_desc{
+    display: grid;
+    font-weight: bold;
+    color: white;
+    font-size: 12px;
+    grid-column-start: 2;
+    grid-columg-end: 3;
+}
+.forecast_temp{
+    display: grid;
+    font-weight: bold;
+    color: white;
+    font-size: 12px;
+    grid-column-start: 3;
+    grid-columg-end: 4;
+}

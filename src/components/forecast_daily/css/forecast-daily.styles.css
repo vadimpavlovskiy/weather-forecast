@@ -1,0 +1,9 @@
+.forecast_daily { 
+    padding: 5% 5% 0 5%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 5%;
+    grid-row-gap: 20%;
+    flex-direction: row;
+    justify-content: space-around;
+}
