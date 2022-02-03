@@ -1,16 +1,56 @@
 .forecast{
-    display: flex;
+    display: grid;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     color: white;
-    margin-top: 5%;
-    width: 100%;
+    margin: 5% 10% 0% 10%;
+    width: 80%;
     font-size: 20px;
+    background: rgba( 255, 68, 68, 0.25 );
+    box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+    backdrop-filter: blur( 6.5px );
+    -webkit-backdrop-filter: blur( 6.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 .forecast span {
     font-weight: bold;
 }
-.forecast div {
-    margin-top: 5%;
+.current_card {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    padding: 5% 0% 5% 0%;
+    grid-column-gap: 35%;
+    align-items: center;
+    justify-content: center;
+}
+.current_info{
+    display: grid;
+}
+.current_info p{
+    padding-top: 10px;
+}
+.current_card div {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 5% 0% 5% 0%;
+}
+.current_img{
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+@media (min-width: 319px) and (max-width: 425px){
+  .forecast{
+      font-size: 14px;
+  }
+  .current_card{
+      grid-column-gap: 0%;
+  }
+  .current_card div{
+    grid-row-start: none;
+    grid-row-end: none;
+    padding: 5% 0% 5% 0%;
+}
 }

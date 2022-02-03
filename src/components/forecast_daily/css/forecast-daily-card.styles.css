@@ -1,7 +1,7 @@
 .forecast_card{
     display: grid;
     width: 100%;
-    grid-column-gap: 5%;
+    grid-column-gap: 1%;
     background: rgba( 255, 68, 68, 0.25 );
     box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
     backdrop-filter: blur( 6.5px );
@@ -11,7 +11,31 @@
     align-items: center;
     justify-content: start;
 }
+.forecast_card_now{
+    display: grid;
+    width: 100%;
+    grid-column-gap: 5%;
+    background: rgba( 255, 68, 68, 0.25 );
+    box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+    backdrop-filter: blur( 6.5px );
+    -webkit-backdrop-filter: blur( 6.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+}
 .forecast_date {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.forecast_date_now {
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 1;
@@ -19,6 +43,8 @@
 }
 .forecast_day{
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     width: 100%;
     justify-items: center;
     font-weight: bold;
@@ -27,12 +53,26 @@
     justify-content: center;
     flex-wrap: nowrap;
     align-content: center;
+    align-items: center
+}
+hr{
+    width: 80%;
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
 .forecast_icon{
     grid-column-start: 1;
     grid-column-end: 2;
 }
 .forecast_icon img{
+    width: 70px;
+}
+.forecast_icon_now{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    justify-content: center;
+}
+.forecast_icon_now img{
     width: 70px;
 }
 .forecast_temp_desc{
@@ -50,4 +90,89 @@
     font-size: 12px;
     grid-column-start: 3;
     grid-columg-end: 4;
+}
+.forecast_temp_now{
+    display: grid;
+    font-weight: bold;
+    color: white;
+    font-size: 12px;
+    grid-column-start: 2;
+    grid-columg-end: 3;
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .forecast_card{
+        display: grid;
+        width: 100%;
+        padding-top: 5%;
+        grid-column-gap: 1%;
+        background: rgba( 255, 68, 68, 0.25 );
+        box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+        backdrop-filter: blur( 6.5px );
+        -webkit-backdrop-filter: blur( 6.5px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        align-items: center;
+        justify-content: center;
+    }
+
+    hr{
+        width: 100%;
+    }
+
+    .forecast_card_now{
+        display: grid;
+        width: 100%;
+        grid-column-gap: 5%;
+        background: rgba( 255, 68, 68, 0.25 );
+        box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+        backdrop-filter: blur( 6.5px );
+        -webkit-backdrop-filter: blur( 6.5px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        align-items: center;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        align-content: center;
+        justify-items: center;
+        justify-content: center;
+    }
+}
+@media (min-width: 320px) and (max-width: 425px){
+    .forecast_card{
+        display: grid;
+        width: 100%;
+        padding-top: 5%;
+        grid-column-gap: 1%;
+        background: rgba( 255, 68, 68, 0.25 );
+        box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+        backdrop-filter: blur( 6.5px );
+        -webkit-backdrop-filter: blur( 6.5px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        align-items: center;
+        justify-content: center;
+    }
+
+    hr{
+        width: 100%;
+    }
+
+    .forecast_card_now{
+        display: grid;
+        width: 100%;
+        grid-column-gap: 5%;
+        background: rgba( 255, 68, 68, 0.25 );
+        box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+        backdrop-filter: blur( 6.5px );
+        -webkit-backdrop-filter: blur( 6.5px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        align-items: center;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        align-content: center;
+        justify-items: center;
+        justify-content: center;
+    }
 }

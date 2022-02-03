@@ -9,3 +9,14 @@ h1{
     color: white;
     margin: 0;
 }
+@media (min-width: 320px) and (max-width: 425px){
+    .header{
+        width: 100%;
+        margin: 0;
+    }
+    h1{
+        width: 100%;
+        font-size: 22px;
+    }
+
+}

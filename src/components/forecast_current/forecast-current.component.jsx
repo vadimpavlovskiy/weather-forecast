@@ -12,12 +12,19 @@ export const ForecastCurrent = (props) => {
             }
     })
     return (
-    <div >
+    <div className="forecast">
         {(typeof props.weather.main != "undefined") ? (
-            <div className="forecast">
-                <div>Your city: <span>{props.weather.name}</span></div>
-                <div>Temperature: <span>{props.weather.main.temp} °C</span></div>
-                <div>Weather: <span>{props.weather.weather[0].main}</span></div>
+            <div>
+                <div className="current_card">
+                    <div className="current_info">
+                       <p> Your city: <span>{props.weather.name}</span> </p>
+                       <p> Weather: <span>{props.weather.weather[0].main}</span> </p>
+                       <p> Temperature: <span>{Math.round(props.weather.main.temp)} °C</span> </p>
+                        </div>
+                    <div className="current_img">
+                        <img src={`http://openweathermap.org/img/wn/${props.weather.weather[0].icon}@2x.png`} alt="" />
+                    </div>
+                </div>
             </div>
     ) : ('')}
     </div>

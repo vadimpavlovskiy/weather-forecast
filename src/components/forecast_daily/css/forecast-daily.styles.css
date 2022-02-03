@@ -1,9 +1,27 @@
 .forecast_daily { 
     padding: 5% 5% 0 5%;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-column-gap: 5%;
+    grid-template-columns: repeat(5,1fr);
+    grid-column-gap: 4%;
     grid-row-gap: 20%;
     flex-direction: row;
     justify-content: space-around;
+}
+@media (min-width: 768px) and (max-width: 1024px){
+    .forecast_daily{
+        padding: 5% 5% 0 5%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-column-gap: 2%;
+        grid-row-gap: 5%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+@media (min-width: 320px) and (max-width: 425px) {
+    .forecast_daily{
+        grid-template-columns: repeat(1,1fr);
+        grid-column-gap: 1%;
+        grid-row-gap: 1%;
+    }
 }

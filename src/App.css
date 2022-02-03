@@ -22,8 +22,18 @@ body{
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 
     margin: 3% 10% 0 10%;
-    height: 700px;
+    height: 900px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+@media (min-width: 768px) and (max-width: 1024px){
+  .container {height: 900px;}
+}
+@media (min-width: 320px) and (max-width: 425px){
+  .container{
+    padding-top: 10%;
+    justify-content: normal;
+    height: 1900px;
+  }
 }

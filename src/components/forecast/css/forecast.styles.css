@@ -25,3 +25,51 @@ button:hover{
     border-radius: 5px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
+.input {
+    background: rgba( 255, 99, 92 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6.5px );
+    -webkit-backdrop-filter: blur( 6.5px );
+    border-radius: 5px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color: white;
+    font-size: 16px;
+    width: 60%;
+}
+.input::placeholder{
+    color: white;
+    font-size: 14px;
+}
+.send{
+    background: rgba( 255, 68, 68 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6.5px );
+    -webkit-backdrop-filter: blur( 6.5px );
+    border-radius: 5px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color: white;
+    margin-left: 5%;
+    font-size: 18px;
+    width: 30%;
+}
+.send:hover{
+    background: rgba(222, 30, 45);
+}
+@media (min-width: 320px) and (max-width: 425px){
+    .forecast_flex{
+        flex-direction: column;
+        align-items: center;
+    }
+    button{
+        background: rgba( 255, 68, 68, 0.25 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 6.5px );
+        -webkit-backdrop-filter: blur( 6.5px );
+        border-radius: 5px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        color: white;
+        font-size: 20px;
+        width: 90%;
+        margin: 2% 0 2% 0;
+    }
+}
