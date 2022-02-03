@@ -22,7 +22,7 @@ export const ForecastCurrent = (props) => {
                        <p> Temperature: <span>{Math.round(props.weather.main.temp)} °C</span> </p>
                         </div>
                     <div className="current_img">
-                        <img src={`http://openweathermap.org/img/wn/${props.weather.weather[0].icon}@2x.png`} alt="" />
+                        <img src={`https://openweathermap.org/img/wn/${props.weather.weather[0].icon}@2x.png`} alt="" />
                     </div>
                 </div>
             </div>

@@ -9,7 +9,7 @@ export const ForecastCurrentDaily = (props) => (
             
         </div>
         <div className="forecast_icon_now">
-            <img src ={`http://openweathermap.org/img/wn/${props.weather.weather[0].icon}@2x.png`} alt={`${props.weather.weather[0].desc}`} />
+            <img src ={`https://openweathermap.org/img/wn/${props.weather.weather[0].icon}@2x.png`} alt={`${props.weather.weather[0].desc}`} />
         </div>
         <div className="forecast_temp_now">
             <p>Temperature now: {props.weather.temp} °C</p>

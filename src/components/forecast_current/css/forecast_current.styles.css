@@ -41,7 +41,7 @@
     grid-row-end: 3;
 }
 
-@media (min-width: 319px) and (max-width: 425px){
+@media (min-width: 200px) and (max-width: 425px){
   .forecast{
       font-size: 14px;
   }

@@ -18,7 +18,7 @@
         justify-content: space-around;
     }
 }
-@media (min-width: 320px) and (max-width: 425px) {
+@media (min-width: 200px) and (max-width: 425px) {
     .forecast_daily{
         grid-template-columns: repeat(1,1fr);
         grid-column-gap: 1%;

@@ -138,7 +138,7 @@ hr{
         justify-content: center;
     }
 }
-@media (min-width: 320px) and (max-width: 425px){
+@media (min-width: 200px) and (max-width: 425px){
     .forecast_card{
         display: grid;
         width: 100%;
