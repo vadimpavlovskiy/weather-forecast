@@ -8,9 +8,6 @@ export const ForecastCurrent = (props) => {
                 // Without 2 setTimout doenst work, solve it later
                 setTimeout(() => {
                 screen.classList.add('avalible')
-                setTimeout(()=> {
-                    screen.outerHTML = ''    
-                },1000)
               },1000)
             }
     })

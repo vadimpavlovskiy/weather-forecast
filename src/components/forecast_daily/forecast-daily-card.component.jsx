@@ -13,7 +13,7 @@ export const ForecastDailyCard = props =>
             <hr />
         </div>
         <div className="forecast_icon">
-            <img src ={`http://openweathermap.org/img/wn/${props.detail[0].icon}@2x.png`} alt="" />
+            <img src ={`http://openweathermap.org/img/wn/${props.detail[0].icon}@2x.png`} alt={`${props.detail[0].description}`} />
         </div>
         <div className="forecast_temp_desc">
             <p>Morning:</p>
