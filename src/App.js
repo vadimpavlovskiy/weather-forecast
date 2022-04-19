@@ -9,14 +9,14 @@ const App = () => {
   
   const API_OPENWEATHER = [
     {
-      key: 'd95186430709219ad7f3a1671db2c152'
+      key: '496c270d4c8090f757a140e1ada58c7e'
     }
   ]
 
   const [coord, setCoord] = useState([]);
 
   async function getLocation (){
-    await navigator.geolocation.getCurrentPosition(position => { setCoord(position.coords)}); 
+    await navigator.geolocation.getCurrentPosition((position) => {setCoord(position.coords)}, ()=>{alert(`Please, turn on Google geolocation and reload page!`);})
   }
 
   useEffect(() => {
